@@ -1,0 +1,17 @@
+def MeanMode(arr)
+
+  # code goes here
+  arr = arr.to_a.sort
+  sum = arr.inject(:+)
+  if sum/arr.count == arr.modes
+      re = 0
+  else
+    re= 1
+  end
+  return re
+         
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+MeanMode(STDIN.gets)           
