@@ -2,7 +2,7 @@ def FirstFactorial(num)
 
   # code goes here
   arr = num.downto(1).to_a
-  return re = arr.inject(:*)
+  return arr.inject(:*)
          
 end
    
