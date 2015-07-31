@@ -1,0 +1,16 @@
+def ArrayAdditionI(arr)
+
+  # code goes here
+  last = arr.to_a.sort
+  arr.slice!(-1)
+  if arr.inject(:+) == last.last
+    re = true
+  else
+    re = false
+    return re 
+  end     
+end
+   
+# keep this function call here 
+# to see how to enter arguments in Ruby scroll down   
+ArrayAdditionI(STDIN.gets)           
